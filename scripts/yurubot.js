@@ -19,25 +19,25 @@ module.exports = (robot) => {
 
   });
 
-//   robot.respond(/ユーザー登録$/i, (res) => {
-//     var ID = ;
-//     var Name = ;
-//     var request = new XMLHttpRequest();
+  robot.respond(/ユーザー登録$/i, (res) => {
+    var ID;
+    var Name;
+    var request = new XMLHttpRequest();
 
-//     request.open('GET','https://127.0.0.1:5000/yurubot/api/get',true);
-//     request.responseType = 'json';
+    request.open('GET','https://127.0.0.1:5000/yurubot/api/get/javascript',true);
+    request.responseType = 'json';
 
-//     request.onload = function(){
-//         var data = this.response;
-//         console.log(data);
-//     };
+    request.onload = function(){
+        var data = this.response;
+        console.log(data);
+    };
 
-//   });
+  });
 
   robot.respond(/キーワード送信$/i, (res) => { //送りっぱなしのもの
     var SendList = [];
     var Message = '';
-    var Keywords;
+    var Keyword;
 
     // getAPI
     SendList = ['_231478410_897581056'];
@@ -50,7 +50,7 @@ module.exports = (robot) => {
     var ID = res.message.room;
     var SendList = [];
     var Message = '';
-    var Keywords;
+    var Keyword;
 
     // getAPI
     SendList = ['_231478410_897581056'];
@@ -58,7 +58,7 @@ module.exports = (robot) => {
 
     sendslist(SendList,Message);
 
-    var time = 0;
+    var time = '12:34';
     tasklist[ID] = [Keywords,time]
   });
 
@@ -106,7 +106,11 @@ module.exports = (robot) => {
   });
 
   robot.respond(/しめきり$/i, (res) => {
-    
+    var ID = res.message.room;
+    var Keyword = tasklist[ID][0];
+    var time = tasklist[ID][1];
+    res.send(time + 'の質問を締め切りました．');
+    delete tasklist[ID];
   });
 
   
