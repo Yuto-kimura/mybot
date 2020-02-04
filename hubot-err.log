@@ -1,0 +1,42 @@
+[2020-02-04 11:55:43]  WebSocket error. event: [Error: read ECONNRESET
+  at TLSWrap.onStreamRead (internal/stream_base_commons.js:205:27)
+] {
+  errno: -54,
+  code: 'ECONNRESET',
+  syscall: 'read'
+}   
+[2020-02-04 12:10:56]  WebSocket error. event: [Error: read ECONNRESET
+  at TLSWrap.onStreamRead (internal/stream_base_commons.js:205:27)
+] {
+  errno: -54,
+  code: 'ECONNRESET',
+  syscall: 'read'
+}   
+[2020-02-04 14:19:18]  WebSocket error. event: [Error: read ECONNRESET
+  at TLSWrap.onStreamRead (internal/stream_base_commons.js:205:27)
+] {
+  errno: -54,
+  code: 'ECONNRESET',
+  syscall: 'read'
+}   
+[2020-02-04 14:33:16]  WebSocket error. event: [Error: read ECONNRESET
+  at TLSWrap.onStreamRead (internal/stream_base_commons.js:205:27)
+] {
+  errno: -54,
+  code: 'ECONNRESET',
+  syscall: 'read'
+}   
+[2020-02-04 14:45:00]  WebSocket error. event: [Error: read ECONNRESET
+  at TLSWrap.onStreamRead (internal/stream_base_commons.js:205:27)
+] {
+  errno: -54,
+  code: 'ECONNRESET',
+  syscall: 'read'
+}   
+[2020-02-04 15:22:12]  WebSocket error. event: [Error: read ECONNRESET
+  at TLSWrap.onStreamRead (internal/stream_base_commons.js:205:27)
+] {
+  errno: -54,
+  code: 'ECONNRESET',
+  syscall: 'read'
+}   

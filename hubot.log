@@ -1,0 +1,625 @@
+[2020-02-04 11:09:32]  WebSocket opened.    
+[Tue Feb 04 2020 11:09:32 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[2020-02-04 11:10:39]  WebSocket opened.    
+[Tue Feb 04 2020 11:10:39 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[2020-02-04 11:10:52]  WebSocket opened.    
+[Tue Feb 04 2020 11:10:53 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[2020-02-04 11:14:29]  WebSocket opened.    
+[Tue Feb 04 2020 11:14:29 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[2020-02-04 11:14:45]  WebSocket opened.    
+[Tue Feb 04 2020 11:14:45 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[2020-02-04 11:15:10]  WebSocket opened.    
+[Tue Feb 04 2020 11:15:10 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[2020-02-04 11:15:24]  WebSocket opened.    
+[Tue Feb 04 2020 11:15:24 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[Tue Feb 04 2020 11:15:28 GMT+0900 (日本標準時)] ERROR TypeError: Cannot read property 'place' of undefined
+  at TextListener.callback (/Users/naru/Dropbox/Documents/js/Ateambot/scripts/ping2.js:17:43)
+  at executeListener (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/lisb-hubot/src/listener.js:79:16)
+  at allDone (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/lisb-hubot/src/middleware.js:56:7)
+  at /Users/naru/Dropbox/Documents/js/Ateambot/node_modules/async/lib/async.js:254:13
+  at Object.async.eachSeries (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/async/lib/async.js:130:20)
+  at async.reduce (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/async/lib/async.js:248:15)
+  at processTicksAndRejections (internal/process/task_queues.js:79:11)
+
+[Tue Feb 04 2020 11:15:59 GMT+0900 (日本標準時)] ERROR TypeError: Cannot read property 'place' of undefined
+  at TextListener.callback (/Users/naru/Dropbox/Documents/js/Ateambot/scripts/ping2.js:17:43)
+  at executeListener (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/lisb-hubot/src/listener.js:79:16)
+  at allDone (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/lisb-hubot/src/middleware.js:56:7)
+  at /Users/naru/Dropbox/Documents/js/Ateambot/node_modules/async/lib/async.js:254:13
+  at Object.async.eachSeries (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/async/lib/async.js:130:20)
+  at async.reduce (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/async/lib/async.js:248:15)
+  at processTicksAndRejections (internal/process/task_queues.js:79:11)
+
+[2020-02-04 11:55:43]  WebSocket closed. 1006 Socket Error: read ECONNRESET null    
+[2020-02-04 11:55:43]  onClose. code:1006, reason:Socket Error: read ECONNRESET, wasClean:null    
+[2020-02-04 11:55:43]  WebSocket opened.    
+[2020-02-04 12:10:56]  WebSocket closed. 1006 Socket Error: read ECONNRESET null    
+[2020-02-04 12:10:56]  onClose. code:1006, reason:Socket Error: read ECONNRESET, wasClean:null    
+[2020-02-04 12:10:57]  WebSocket opened.    
+[Tue Feb 04 2020 12:34:10 GMT+0900 (日本標準時)] ERROR Error: Redis connection in broken state: connection timeout exceeded.
+  at RedisClient.connection_gone (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/redis/index.js:649:19)
+  at RedisClient.on_error (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/redis/index.js:410:10)
+  at Socket.<anonymous> (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/redis/index.js:279:14)
+  at Socket.emit (events.js:305:20)
+  at emitErrorNT (internal/streams/destroy.js:84:8)
+  at processTicksAndRejections (internal/process/task_queues.js:84:21)
+
+[2020-02-04 13:28:01]  WebSocket opened.    
+[Tue Feb 04 2020 13:28:01 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+{
+  '_231397633_-1195376640': {
+    id: '_231397633_-1195376640',
+    status: null,
+    displayName: 'A)谷口成己',
+    canonicalDisplayName: 'A)谷口成己',
+    phoneticDisplayName: 'user002',
+    canonicalPhoneticDisplayName: 'USER002',
+    profileImageUrl: null,
+    updatedAt: { high: 368, low: 231028790 },
+    domainId: { high: 131349001, low: 1447034880 },
+    departments: null,
+    __uid_caching: true,
+    email: null,
+    subEmail: null,
+    groupAlias: 'IIJ-IH202002',
+    signinId: 'user002',
+    id_i64: { high: 231397633, low: -1195376640 },
+    name: 'A)谷口成己',
+    profile_url: null
+  }
+}
+[2020-02-04 13:33:03]  WebSocket opened.    
+[Tue Feb 04 2020 13:33:03 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[2020-02-04 13:33:10]  WebSocket opened.    
+[Tue Feb 04 2020 13:33:11 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[Tue Feb 04 2020 13:33:15 GMT+0900 (日本標準時)] ERROR ReferenceError: users is not defined
+  at TextListener.callback (/Users/naru/Dropbox/Documents/js/Ateambot/scripts/ping2.js:13:32)
+  at executeListener (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/lisb-hubot/src/listener.js:79:16)
+  at allDone (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/lisb-hubot/src/middleware.js:56:7)
+  at /Users/naru/Dropbox/Documents/js/Ateambot/node_modules/async/lib/async.js:254:13
+  at Object.async.eachSeries (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/async/lib/async.js:130:20)
+  at async.reduce (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/async/lib/async.js:248:15)
+  at processTicksAndRejections (internal/process/task_queues.js:79:11)
+
+[Tue Feb 04 2020 13:33:40 GMT+0900 (日本標準時)] ERROR ReferenceError: users is not defined
+  at TextListener.callback (/Users/naru/Dropbox/Documents/js/Ateambot/scripts/ping2.js:13:32)
+  at executeListener (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/lisb-hubot/src/listener.js:79:16)
+  at allDone (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/lisb-hubot/src/middleware.js:56:7)
+  at /Users/naru/Dropbox/Documents/js/Ateambot/node_modules/async/lib/async.js:254:13
+  at Object.async.eachSeries (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/async/lib/async.js:130:20)
+  at async.reduce (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/async/lib/async.js:248:15)
+  at processTicksAndRejections (internal/process/task_queues.js:79:11)
+
+[2020-02-04 13:33:55]  WebSocket opened.    
+[Tue Feb 04 2020 13:33:55 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[2020-02-04 13:34:06]  WebSocket opened.    
+[Tue Feb 04 2020 13:34:06 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[Tue Feb 04 2020 13:34:08 GMT+0900 (日本標準時)] ERROR ReferenceError: users is not defined
+  at TextListener.callback (/Users/naru/Dropbox/Documents/js/Ateambot/scripts/ping2.js:13:32)
+  at executeListener (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/lisb-hubot/src/listener.js:79:16)
+  at allDone (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/lisb-hubot/src/middleware.js:56:7)
+  at /Users/naru/Dropbox/Documents/js/Ateambot/node_modules/async/lib/async.js:254:13
+  at Object.async.eachSeries (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/async/lib/async.js:130:20)
+  at async.reduce (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/async/lib/async.js:248:15)
+  at processTicksAndRejections (internal/process/task_queues.js:79:11)
+
+[2020-02-04 13:34:52]  WebSocket opened.    
+[Tue Feb 04 2020 13:34:52 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[2020-02-04 13:34:59]  WebSocket opened.    
+[Tue Feb 04 2020 13:35:01 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[2020-02-04 13:49:01]  WebSocket opened.    
+[Tue Feb 04 2020 13:49:01 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[2020-02-04 13:49:17]  WebSocket opened.    
+[Tue Feb 04 2020 13:49:17 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[2020-02-04 13:54:19]  WebSocket opened.    
+[Tue Feb 04 2020 13:54:20 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[2020-02-04 13:54:27]  WebSocket opened.    
+[Tue Feb 04 2020 13:54:28 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[2020-02-04 14:19:18]  WebSocket closed. 1006 Socket Error: read ECONNRESET null    
+[2020-02-04 14:19:18]  onClose. code:1006, reason:Socket Error: read ECONNRESET, wasClean:null    
+[2020-02-04 14:19:19]  WebSocket opened.    
+[2020-02-04 14:33:16]  WebSocket closed. 1006 Socket Error: read ECONNRESET null    
+[2020-02-04 14:33:16]  onClose. code:1006, reason:Socket Error: read ECONNRESET, wasClean:null    
+[2020-02-04 14:33:17]  WebSocket opened.    
+[2020-02-04 14:45:00]  WebSocket closed. 1006 Socket Error: read ECONNRESET null    
+[2020-02-04 14:45:00]  onClose. code:1006, reason:Socket Error: read ECONNRESET, wasClean:null    
+[2020-02-04 14:45:00]  WebSocket opened.    
+[2020-02-04 14:48:15]  WebSocket opened.    
+[Tue Feb 04 2020 14:48:15 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[2020-02-04 14:48:24]  WebSocket opened.    
+[Tue Feb 04 2020 14:48:25 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[2020-02-04 14:48:59]  WebSocket opened.    
+[Tue Feb 04 2020 14:48:59 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[2020-02-04 14:49:08]  WebSocket opened.    
+[Tue Feb 04 2020 14:49:09 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[2020-02-04 14:49:50]  WebSocket opened.    
+[Tue Feb 04 2020 14:49:50 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[2020-02-04 14:50:02]  WebSocket opened.    
+[Tue Feb 04 2020 14:50:03 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[2020-02-04 14:52:12]  WebSocket opened.    
+[Tue Feb 04 2020 14:52:12 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[2020-02-04 14:52:20]  WebSocket opened.    
+[Tue Feb 04 2020 14:52:21 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[2020-02-04 14:52:43]  WebSocket opened.    
+[Tue Feb 04 2020 14:52:43 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[Tue Feb 04 2020 14:52:57 GMT+0900 (日本標準時)] ERROR ReferenceError: I is not defined
+  at sendslist (/Users/naru/Dropbox/Documents/js/Ateambot/scripts/ping2.js:30:11)
+  at TextListener.callback (/Users/naru/Dropbox/Documents/js/Ateambot/scripts/ping2.js:12:5)
+  at executeListener (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/lisb-hubot/src/listener.js:79:16)
+  at allDone (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/lisb-hubot/src/middleware.js:56:7)
+  at /Users/naru/Dropbox/Documents/js/Ateambot/node_modules/async/lib/async.js:254:13
+  at Object.async.eachSeries (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/async/lib/async.js:130:20)
+  at async.reduce (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/async/lib/async.js:248:15)
+  at processTicksAndRejections (internal/process/task_queues.js:79:11)
+
+[2020-02-04 14:53:56]  WebSocket opened.    
+[Tue Feb 04 2020 14:53:57 GMT+0900 (日本標準時)] ERROR Unable to load /Users/naru/Dropbox/Documents/js/Ateambot/scripts/ping2: /Users/naru/Dropbox/Documents/js/Ateambot/scripts/ping2.js:31
+      robot.send({LLength[I]}, Message);
+                         ^
+
+SyntaxError: Unexpected token '['
+  at wrapSafe (internal/modules/cjs/loader.js:1055:16)
+  at Module._compile (internal/modules/cjs/loader.js:1103:27)
+  at Object.Module._extensions..js (internal/modules/cjs/loader.js:1159:10)
+  at Module.load (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/coffeescript/lib/coffee-script/coffee-script.js:211:36)
+  at Function.Module._load (internal/modules/cjs/loader.js:896:14)
+  at Module.require (internal/modules/cjs/loader.js:1028:19)
+  at require (internal/modules/cjs/helpers.js:72:18)
+  at Robot.loadFile (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/lisb-hubot/src/robot.js:376:22)
+  at /Users/naru/Dropbox/Documents/js/Ateambot/node_modules/lisb-hubot/src/robot.js:399:52
+  at Array.map (<anonymous>:null:null)
+  at Robot.load (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/lisb-hubot/src/robot.js:399:35)
+  at Adapter.loadScripts (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/lisb-hubot/bin/hubot.js:115:9)
+  at Object.onceWrapper (events.js:411:28)
+  at Adapter.emit (events.js:305:20)
+  at c.<anonymous> (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/hubot-direct/src/direct.coffee:127:6, <js>:201:21)
+  at c.emit (events.js:305:20)
+  at e.DirectAPI.emit (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:1:3467)
+  at lr.handleNotification (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:9:27533)
+  at n (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:1:504)
+  at aa.notifyObserver (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:11:21942)
+  at ta.notifyObservers (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:11:19514)
+  at A.notifyObservers (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:1:14641)
+  at A.sendNotification (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:1:14554)
+  at Xi.sendNotification (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:2:727)
+  at Xi.onNecessaryDataPrepared (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:9:8859)
+  at Xi.prepareNecessaryDataFromCache (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:9:8164)
+  at /Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:9:6278
+  at processTicksAndRejections (internal/process/task_queues.js:97:5)
+
+[2020-02-04 14:54:05]  WebSocket opened.    
+[Tue Feb 04 2020 14:54:06 GMT+0900 (日本標準時)] ERROR Unable to load /Users/naru/Dropbox/Documents/js/Ateambot/scripts/ping2: /Users/naru/Dropbox/Documents/js/Ateambot/scripts/ping2.js:31
+      robot.send({LLength[I]}, Message);
+                         ^
+
+SyntaxError: Unexpected token '['
+  at wrapSafe (internal/modules/cjs/loader.js:1055:16)
+  at Module._compile (internal/modules/cjs/loader.js:1103:27)
+  at Object.Module._extensions..js (internal/modules/cjs/loader.js:1159:10)
+  at Module.load (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/coffeescript/lib/coffee-script/coffee-script.js:211:36)
+  at Function.Module._load (internal/modules/cjs/loader.js:896:14)
+  at Module.require (internal/modules/cjs/loader.js:1028:19)
+  at require (internal/modules/cjs/helpers.js:72:18)
+  at Robot.loadFile (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/lisb-hubot/src/robot.js:376:22)
+  at /Users/naru/Dropbox/Documents/js/Ateambot/node_modules/lisb-hubot/src/robot.js:399:52
+  at Array.map (<anonymous>:null:null)
+  at Robot.load (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/lisb-hubot/src/robot.js:399:35)
+  at Adapter.loadScripts (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/lisb-hubot/bin/hubot.js:115:9)
+  at Object.onceWrapper (events.js:411:28)
+  at Adapter.emit (events.js:305:20)
+  at c.<anonymous> (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/hubot-direct/src/direct.coffee:127:6, <js>:201:21)
+  at c.emit (events.js:305:20)
+  at e.DirectAPI.emit (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:1:3467)
+  at lr.handleNotification (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:9:27533)
+  at n (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:1:504)
+  at aa.notifyObserver (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:11:21942)
+  at ta.notifyObservers (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:11:19514)
+  at A.notifyObservers (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:1:14641)
+  at A.sendNotification (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:1:14554)
+  at Xi.sendNotification (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:2:727)
+  at Xi.onNecessaryDataPrepared (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:9:8859)
+  at n (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:1:504)
+  at c (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:6:17345)
+  at Ei.getUserIdentifiers (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:6:16022)
+  at /Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:6:16113
+  at /Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:6:16680
+  at Hi.onMessage (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:8:25177)
+  at fi.n [as onmessage] (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:1:504)
+  at fi.onMessage (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:5:24090)
+  at WebSocketConnection.n (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:1:504)
+  at WebSocketConnection.emit (events.js:305:20)
+  at WebSocketConnection.processFrame (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/websocket/lib/WebSocketConnection.js:531:26)
+  at /Users/naru/Dropbox/Documents/js/Ateambot/node_modules/websocket/lib/WebSocketConnection.js:323:40
+  at processTicksAndRejections (internal/process/task_queues.js:79:11)
+
+[2020-02-04 14:54:22]  WebSocket opened.    
+[Tue Feb 04 2020 14:54:23 GMT+0900 (日本標準時)] ERROR Unable to load /Users/naru/Dropbox/Documents/js/Ateambot/scripts/ping2: /Users/naru/Dropbox/Documents/js/Ateambot/scripts/ping2.js:31
+      robot.send({L[I]}, Message);
+                   ^
+
+SyntaxError: Unexpected token '['
+  at wrapSafe (internal/modules/cjs/loader.js:1055:16)
+  at Module._compile (internal/modules/cjs/loader.js:1103:27)
+  at Object.Module._extensions..js (internal/modules/cjs/loader.js:1159:10)
+  at Module.load (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/coffeescript/lib/coffee-script/coffee-script.js:211:36)
+  at Function.Module._load (internal/modules/cjs/loader.js:896:14)
+  at Module.require (internal/modules/cjs/loader.js:1028:19)
+  at require (internal/modules/cjs/helpers.js:72:18)
+  at Robot.loadFile (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/lisb-hubot/src/robot.js:376:22)
+  at /Users/naru/Dropbox/Documents/js/Ateambot/node_modules/lisb-hubot/src/robot.js:399:52
+  at Array.map (<anonymous>:null:null)
+  at Robot.load (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/lisb-hubot/src/robot.js:399:35)
+  at Adapter.loadScripts (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/lisb-hubot/bin/hubot.js:115:9)
+  at Object.onceWrapper (events.js:411:28)
+  at Adapter.emit (events.js:305:20)
+  at c.<anonymous> (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/hubot-direct/src/direct.coffee:127:6, <js>:201:21)
+  at c.emit (events.js:305:20)
+  at e.DirectAPI.emit (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:1:3467)
+  at lr.handleNotification (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:9:27533)
+  at n (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:1:504)
+  at aa.notifyObserver (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:11:21942)
+  at ta.notifyObservers (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:11:19514)
+  at A.notifyObservers (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:1:14641)
+  at A.sendNotification (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:1:14554)
+  at Xi.sendNotification (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:2:727)
+  at Xi.onNecessaryDataPrepared (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:9:8859)
+  at n (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:1:504)
+  at c (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:6:17345)
+  at Ei.getUserIdentifiers (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:6:16022)
+  at /Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:6:16113
+  at /Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:6:16680
+  at Hi.onMessage (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:8:25177)
+  at fi.n [as onmessage] (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:1:504)
+  at fi.onMessage (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:5:24090)
+  at WebSocketConnection.n (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:1:504)
+  at WebSocketConnection.emit (events.js:305:20)
+  at WebSocketConnection.processFrame (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/websocket/lib/WebSocketConnection.js:531:26)
+  at /Users/naru/Dropbox/Documents/js/Ateambot/node_modules/websocket/lib/WebSocketConnection.js:323:40
+  at processTicksAndRejections (internal/process/task_queues.js:79:11)
+
+[2020-02-04 14:55:04]  WebSocket opened.    
+[Tue Feb 04 2020 14:55:05 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[Tue Feb 04 2020 14:55:11 GMT+0900 (日本標準時)] ERROR ReferenceError: I is not defined
+  at sendslist (/Users/naru/Dropbox/Documents/js/Ateambot/scripts/ping2.js:30:11)
+  at TextListener.callback (/Users/naru/Dropbox/Documents/js/Ateambot/scripts/ping2.js:12:5)
+  at executeListener (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/lisb-hubot/src/listener.js:79:16)
+  at allDone (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/lisb-hubot/src/middleware.js:56:7)
+  at /Users/naru/Dropbox/Documents/js/Ateambot/node_modules/async/lib/async.js:254:13
+  at Object.async.eachSeries (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/async/lib/async.js:130:20)
+  at async.reduce (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/async/lib/async.js:248:15)
+  at processTicksAndRejections (internal/process/task_queues.js:79:11)
+
+[2020-02-04 14:55:36]  WebSocket opened.    
+[Tue Feb 04 2020 14:55:36 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[2020-02-04 14:55:41]  WebSocket opened.    
+[Tue Feb 04 2020 14:55:42 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[Tue Feb 04 2020 14:56:06 GMT+0900 (日本標準時)] ERROR TypeError: L.length is not a function
+  at sendslist (/Users/naru/Dropbox/Documents/js/Ateambot/scripts/ping2.js:28:21)
+  at TextListener.callback (/Users/naru/Dropbox/Documents/js/Ateambot/scripts/ping2.js:12:5)
+  at executeListener (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/lisb-hubot/src/listener.js:79:16)
+  at allDone (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/lisb-hubot/src/middleware.js:56:7)
+  at /Users/naru/Dropbox/Documents/js/Ateambot/node_modules/async/lib/async.js:254:13
+  at Object.async.eachSeries (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/async/lib/async.js:130:20)
+  at async.reduce (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/async/lib/async.js:248:15)
+  at processTicksAndRejections (internal/process/task_queues.js:79:11)
+
+[2020-02-04 14:56:26]  WebSocket opened.    
+[2020-02-04 14:56:31]  WebSocket opened.    
+[Tue Feb 04 2020 14:56:31 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[Tue Feb 04 2020 14:56:34 GMT+0900 (日本標準時)] ERROR TypeError: L.length is not a function
+  at sendslist (/Users/naru/Dropbox/Documents/js/Ateambot/scripts/ping2.js:28:21)
+  at TextListener.callback (/Users/naru/Dropbox/Documents/js/Ateambot/scripts/ping2.js:12:5)
+  at executeListener (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/lisb-hubot/src/listener.js:79:16)
+  at allDone (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/lisb-hubot/src/middleware.js:56:7)
+  at /Users/naru/Dropbox/Documents/js/Ateambot/node_modules/async/lib/async.js:254:13
+  at Object.async.eachSeries (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/async/lib/async.js:130:20)
+  at async.reduce (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/async/lib/async.js:248:15)
+  at processTicksAndRejections (internal/process/task_queues.js:79:11)
+
+[2020-02-04 14:56:55]  WebSocket opened.    
+[Tue Feb 04 2020 14:56:55 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[2020-02-04 14:57:02]  WebSocket opened.    
+[Tue Feb 04 2020 14:57:03 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[Tue Feb 04 2020 14:57:06 GMT+0900 (日本標準時)] ERROR TypeError: L.length is not a function
+  at sendslist (/Users/naru/Dropbox/Documents/js/Ateambot/scripts/ping2.js:28:21)
+  at TextListener.callback (/Users/naru/Dropbox/Documents/js/Ateambot/scripts/ping2.js:12:5)
+  at executeListener (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/lisb-hubot/src/listener.js:79:16)
+  at allDone (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/lisb-hubot/src/middleware.js:56:7)
+  at /Users/naru/Dropbox/Documents/js/Ateambot/node_modules/async/lib/async.js:254:13
+  at Object.async.eachSeries (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/async/lib/async.js:130:20)
+  at async.reduce (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/async/lib/async.js:248:15)
+  at processTicksAndRejections (internal/process/task_queues.js:79:11)
+
+[2020-02-04 14:57:34]  WebSocket opened.    
+[Tue Feb 04 2020 14:57:34 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[2020-02-04 14:57:40]  WebSocket opened.    
+[Tue Feb 04 2020 14:57:41 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[Tue Feb 04 2020 14:57:45 GMT+0900 (日本標準時)] ERROR TypeError: K.length is not a function
+  at sendslist (/Users/naru/Dropbox/Documents/js/Ateambot/scripts/ping2.js:28:21)
+  at TextListener.callback (/Users/naru/Dropbox/Documents/js/Ateambot/scripts/ping2.js:12:5)
+  at executeListener (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/lisb-hubot/src/listener.js:79:16)
+  at allDone (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/lisb-hubot/src/middleware.js:56:7)
+  at /Users/naru/Dropbox/Documents/js/Ateambot/node_modules/async/lib/async.js:254:13
+  at Object.async.eachSeries (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/async/lib/async.js:130:20)
+  at async.reduce (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/async/lib/async.js:248:15)
+  at processTicksAndRejections (internal/process/task_queues.js:79:11)
+
+[2020-02-04 14:58:53]  WebSocket opened.    
+[Tue Feb 04 2020 14:58:54 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[2020-02-04 14:59:00]  WebSocket opened.    
+[Tue Feb 04 2020 14:59:01 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[Tue Feb 04 2020 14:59:04 GMT+0900 (日本標準時)] ERROR TypeError: K.length is not a function
+  at sendslist (/Users/naru/Dropbox/Documents/js/Ateambot/scripts/ping2.js:28:21)
+  at TextListener.callback (/Users/naru/Dropbox/Documents/js/Ateambot/scripts/ping2.js:12:5)
+  at executeListener (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/lisb-hubot/src/listener.js:79:16)
+  at allDone (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/lisb-hubot/src/middleware.js:56:7)
+  at /Users/naru/Dropbox/Documents/js/Ateambot/node_modules/async/lib/async.js:254:13
+  at Object.async.eachSeries (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/async/lib/async.js:130:20)
+  at async.reduce (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/async/lib/async.js:248:15)
+  at processTicksAndRejections (internal/process/task_queues.js:79:11)
+
+[Tue Feb 04 2020 14:59:21 GMT+0900 (日本標準時)] ERROR TypeError: K.length is not a function
+  at sendslist (/Users/naru/Dropbox/Documents/js/Ateambot/scripts/ping2.js:28:21)
+  at TextListener.callback (/Users/naru/Dropbox/Documents/js/Ateambot/scripts/ping2.js:12:5)
+  at executeListener (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/lisb-hubot/src/listener.js:79:16)
+  at allDone (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/lisb-hubot/src/middleware.js:56:7)
+  at /Users/naru/Dropbox/Documents/js/Ateambot/node_modules/async/lib/async.js:254:13
+  at Object.async.eachSeries (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/async/lib/async.js:130:20)
+  at async.reduce (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/async/lib/async.js:248:15)
+  at processTicksAndRejections (internal/process/task_queues.js:79:11)
+
+[2020-02-04 14:59:40]  WebSocket opened.    
+[Tue Feb 04 2020 14:59:40 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[Tue Feb 04 2020 14:59:45 GMT+0900 (日本標準時)] ERROR TypeError: K.length is not a function
+  at sendslist (/Users/naru/Dropbox/Documents/js/Ateambot/scripts/ping2.js:28:21)
+  at TextListener.callback (/Users/naru/Dropbox/Documents/js/Ateambot/scripts/ping2.js:12:5)
+  at executeListener (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/lisb-hubot/src/listener.js:79:16)
+  at allDone (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/lisb-hubot/src/middleware.js:56:7)
+  at /Users/naru/Dropbox/Documents/js/Ateambot/node_modules/async/lib/async.js:254:13
+  at Object.async.eachSeries (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/async/lib/async.js:130:20)
+  at async.reduce (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/async/lib/async.js:248:15)
+  at processTicksAndRejections (internal/process/task_queues.js:79:11)
+
+[2020-02-04 15:00:34]  WebSocket opened.    
+[Tue Feb 04 2020 15:00:34 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[2020-02-04 15:00:41]  WebSocket opened.    
+[Tue Feb 04 2020 15:00:42 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[Tue Feb 04 2020 15:00:44 GMT+0900 (日本標準時)] ERROR TypeError: K.length is not a function
+  at sendslist (/Users/naru/Dropbox/Documents/js/Ateambot/scripts/ping2.js:28:21)
+  at TextListener.callback (/Users/naru/Dropbox/Documents/js/Ateambot/scripts/ping2.js:12:5)
+  at executeListener (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/lisb-hubot/src/listener.js:79:16)
+  at allDone (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/lisb-hubot/src/middleware.js:56:7)
+  at /Users/naru/Dropbox/Documents/js/Ateambot/node_modules/async/lib/async.js:254:13
+  at Object.async.eachSeries (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/async/lib/async.js:130:20)
+  at async.reduce (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/async/lib/async.js:248:15)
+  at processTicksAndRejections (internal/process/task_queues.js:79:11)
+
+[2020-02-04 15:01:23]  WebSocket opened.    
+[Tue Feb 04 2020 15:01:24 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[2020-02-04 15:02:16]  WebSocket opened.    
+[Tue Feb 04 2020 15:02:16 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[2020-02-04 15:03:20]  WebSocket opened.    
+[Tue Feb 04 2020 15:03:20 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[2020-02-04 15:03:31]  WebSocket opened.    
+[Tue Feb 04 2020 15:03:32 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[2020-02-04 15:03:43]  WebSocket opened.    
+[Tue Feb 04 2020 15:03:44 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[2020-02-04 15:22:12]  WebSocket closed. 1006 Socket Error: read ECONNRESET null    
+[2020-02-04 15:22:12]  onClose. code:1006, reason:Socket Error: read ECONNRESET, wasClean:null    
+[2020-02-04 15:22:13]  WebSocket opened.    
+[2020-02-04 15:43:17]  WebSocket opened.    
+[Tue Feb 04 2020 15:43:17 GMT+0900 (日本標準時)] ERROR Unable to load /Users/naru/Dropbox/Documents/js/Ateambot/scripts/yurubot: /Users/naru/Dropbox/Documents/js/Ateambot/scripts/yurubot.js:12
+    sendslist(['_231478410_897581056','_231493067_1694498816',_231489514_-1723858944'] ,'sendslist test');
+                                                                                    ^^^^^
+
+SyntaxError: Unexpected string
+  at wrapSafe (internal/modules/cjs/loader.js:1055:16)
+  at Module._compile (internal/modules/cjs/loader.js:1103:27)
+  at Object.Module._extensions..js (internal/modules/cjs/loader.js:1159:10)
+  at Module.load (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/coffeescript/lib/coffee-script/coffee-script.js:211:36)
+  at Function.Module._load (internal/modules/cjs/loader.js:896:14)
+  at Module.require (internal/modules/cjs/loader.js:1028:19)
+  at require (internal/modules/cjs/helpers.js:72:18)
+  at Robot.loadFile (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/lisb-hubot/src/robot.js:376:22)
+  at /Users/naru/Dropbox/Documents/js/Ateambot/node_modules/lisb-hubot/src/robot.js:399:52
+  at Array.map (<anonymous>:null:null)
+  at Robot.load (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/lisb-hubot/src/robot.js:399:35)
+  at Adapter.loadScripts (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/lisb-hubot/bin/hubot.js:115:9)
+  at Object.onceWrapper (events.js:411:28)
+  at Adapter.emit (events.js:305:20)
+  at c.<anonymous> (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/hubot-direct/src/direct.coffee:127:6, <js>:201:21)
+  at c.emit (events.js:305:20)
+  at e.DirectAPI.emit (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:1:3467)
+  at lr.handleNotification (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:9:27533)
+  at n (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:1:504)
+  at aa.notifyObserver (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:11:21942)
+  at ta.notifyObservers (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:11:19514)
+  at A.notifyObservers (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:1:14641)
+  at A.sendNotification (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:1:14554)
+  at Xi.sendNotification (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:2:727)
+  at Xi.onNecessaryDataPrepared (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:9:8859)
+  at Xi.prepareNecessaryDataFromCache (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:9:8164)
+  at /Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:9:6278
+  at processTicksAndRejections (internal/process/task_queues.js:97:5)
+
+[2020-02-04 15:43:42]  WebSocket opened.    
+[Tue Feb 04 2020 15:43:43 GMT+0900 (日本標準時)] ERROR Unable to load /Users/naru/Dropbox/Documents/js/Ateambot/scripts/yurubot: /Users/naru/Dropbox/Documents/js/Ateambot/scripts/yurubot.js:12
+    sendslist(['_231478410_897581056','_231493067_1694498816',_231489514_-1723858944'] ,'sendslist test');
+                                                                                    ^^^^^
+
+SyntaxError: Unexpected string
+  at wrapSafe (internal/modules/cjs/loader.js:1055:16)
+  at Module._compile (internal/modules/cjs/loader.js:1103:27)
+  at Object.Module._extensions..js (internal/modules/cjs/loader.js:1159:10)
+  at Module.load (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/coffeescript/lib/coffee-script/coffee-script.js:211:36)
+  at Function.Module._load (internal/modules/cjs/loader.js:896:14)
+  at Module.require (internal/modules/cjs/loader.js:1028:19)
+  at require (internal/modules/cjs/helpers.js:72:18)
+  at Robot.loadFile (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/lisb-hubot/src/robot.js:376:22)
+  at /Users/naru/Dropbox/Documents/js/Ateambot/node_modules/lisb-hubot/src/robot.js:399:52
+  at Array.map (<anonymous>:null:null)
+  at Robot.load (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/lisb-hubot/src/robot.js:399:35)
+  at Adapter.loadScripts (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/lisb-hubot/bin/hubot.js:115:9)
+  at Object.onceWrapper (events.js:411:28)
+  at Adapter.emit (events.js:305:20)
+  at c.<anonymous> (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/hubot-direct/src/direct.coffee:127:6, <js>:201:21)
+  at c.emit (events.js:305:20)
+  at e.DirectAPI.emit (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:1:3467)
+  at lr.handleNotification (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:9:27533)
+  at n (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:1:504)
+  at aa.notifyObserver (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:11:21942)
+  at ta.notifyObservers (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:11:19514)
+  at A.notifyObservers (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:1:14641)
+  at A.sendNotification (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:1:14554)
+  at Xi.sendNotification (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:2:727)
+  at Xi.onNecessaryDataPrepared (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:9:8859)
+  at n (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:1:504)
+  at c (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:6:17345)
+  at Ei.getUserIdentifiers (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:6:16022)
+  at /Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:6:16113
+  at /Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:6:16680
+  at Hi.onMessage (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:8:25177)
+  at fi.n [as onmessage] (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:1:504)
+  at fi.onMessage (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:5:24090)
+  at WebSocketConnection.n (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:1:504)
+  at WebSocketConnection.emit (events.js:305:20)
+  at WebSocketConnection.processFrame (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/websocket/lib/WebSocketConnection.js:531:26)
+  at /Users/naru/Dropbox/Documents/js/Ateambot/node_modules/websocket/lib/WebSocketConnection.js:323:40
+  at processTicksAndRejections (internal/process/task_queues.js:79:11)
+
+[2020-02-04 15:44:04]  WebSocket opened.    
+[Tue Feb 04 2020 15:44:05 GMT+0900 (日本標準時)] ERROR Unable to load /Users/naru/Dropbox/Documents/js/Ateambot/scripts/yurubot: /Users/naru/Dropbox/Documents/js/Ateambot/scripts/yurubot.js:12
+    sendslist(['_231478410_897581056','_231493067_1694498816',_231489514_-1723858944'] ,'sendslist test');
+                                                                                    ^^^^^
+
+SyntaxError: Unexpected string
+  at wrapSafe (internal/modules/cjs/loader.js:1055:16)
+  at Module._compile (internal/modules/cjs/loader.js:1103:27)
+  at Object.Module._extensions..js (internal/modules/cjs/loader.js:1159:10)
+  at Module.load (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/coffeescript/lib/coffee-script/coffee-script.js:211:36)
+  at Function.Module._load (internal/modules/cjs/loader.js:896:14)
+  at Module.require (internal/modules/cjs/loader.js:1028:19)
+  at require (internal/modules/cjs/helpers.js:72:18)
+  at Robot.loadFile (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/lisb-hubot/src/robot.js:376:22)
+  at /Users/naru/Dropbox/Documents/js/Ateambot/node_modules/lisb-hubot/src/robot.js:399:52
+  at Array.map (<anonymous>:null:null)
+  at Robot.load (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/lisb-hubot/src/robot.js:399:35)
+  at Adapter.loadScripts (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/lisb-hubot/bin/hubot.js:115:9)
+  at Object.onceWrapper (events.js:411:28)
+  at Adapter.emit (events.js:305:20)
+  at c.<anonymous> (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/hubot-direct/src/direct.coffee:127:6, <js>:201:21)
+  at c.emit (events.js:305:20)
+  at e.DirectAPI.emit (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:1:3467)
+  at lr.handleNotification (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:9:27533)
+  at n (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:1:504)
+  at aa.notifyObserver (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:11:21942)
+  at ta.notifyObservers (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:11:19514)
+  at A.notifyObservers (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:1:14641)
+  at A.sendNotification (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:1:14554)
+  at Xi.sendNotification (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:2:727)
+  at Xi.onNecessaryDataPrepared (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:9:8859)
+  at n (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:1:504)
+  at c (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:6:17345)
+  at Ei.getUserIdentifiers (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:6:16022)
+  at /Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:6:16113
+  at /Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:6:16680
+  at Hi.onMessage (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:8:25177)
+  at fi.n [as onmessage] (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:1:504)
+  at fi.onMessage (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:5:24090)
+  at WebSocketConnection.n (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:1:504)
+  at WebSocketConnection.emit (events.js:305:20)
+  at WebSocketConnection.processFrame (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/websocket/lib/WebSocketConnection.js:531:26)
+  at /Users/naru/Dropbox/Documents/js/Ateambot/node_modules/websocket/lib/WebSocketConnection.js:323:40
+  at processTicksAndRejections (internal/process/task_queues.js:79:11)
+
+[2020-02-04 15:44:27]  WebSocket opened.    
+[Tue Feb 04 2020 15:44:28 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[2020-02-04 15:44:57]  WebSocket opened.    
+[Tue Feb 04 2020 15:44:58 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[2020-02-04 15:45:31]  WebSocket opened.    
+[Tue Feb 04 2020 15:45:31 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[2020-02-04 15:45:48]  WebSocket opened.    
+[Tue Feb 04 2020 15:45:48 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[2020-02-04 15:50:25]  WebSocket opened.    
+[Tue Feb 04 2020 15:50:25 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[2020-02-04 15:50:54]  WebSocket opened.    
+[Tue Feb 04 2020 15:50:54 GMT+0900 (日本標準時)] ERROR Unable to load /Users/naru/Dropbox/Documents/js/Ateambot/scripts/yurubot: /Users/naru/Dropbox/Documents/js/Ateambot/scripts/yurubot.js:51
+    keywords = ['abc,'cde','efg']; //for test
+                      ^^^
+
+SyntaxError: Unexpected identifier
+  at wrapSafe (internal/modules/cjs/loader.js:1055:16)
+  at Module._compile (internal/modules/cjs/loader.js:1103:27)
+  at Object.Module._extensions..js (internal/modules/cjs/loader.js:1159:10)
+  at Module.load (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/coffeescript/lib/coffee-script/coffee-script.js:211:36)
+  at Function.Module._load (internal/modules/cjs/loader.js:896:14)
+  at Module.require (internal/modules/cjs/loader.js:1028:19)
+  at require (internal/modules/cjs/helpers.js:72:18)
+  at Robot.loadFile (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/lisb-hubot/src/robot.js:376:22)
+  at /Users/naru/Dropbox/Documents/js/Ateambot/node_modules/lisb-hubot/src/robot.js:399:52
+  at Array.map (<anonymous>:null:null)
+  at Robot.load (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/lisb-hubot/src/robot.js:399:35)
+  at Adapter.loadScripts (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/lisb-hubot/bin/hubot.js:115:9)
+  at Object.onceWrapper (events.js:411:28)
+  at Adapter.emit (events.js:305:20)
+  at c.<anonymous> (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/hubot-direct/src/direct.coffee:127:6, <js>:201:21)
+  at c.emit (events.js:305:20)
+  at e.DirectAPI.emit (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:1:3467)
+  at lr.handleNotification (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:9:27533)
+  at n (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:1:504)
+  at aa.notifyObserver (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:11:21942)
+  at ta.notifyObservers (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:11:19514)
+  at A.notifyObservers (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:1:14641)
+  at A.sendNotification (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:1:14554)
+  at Xi.sendNotification (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:2:727)
+  at Xi.onNecessaryDataPrepared (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:9:8859)
+  at Xi.prepareNecessaryDataFromCache (/Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:9:8164)
+  at /Users/naru/Dropbox/Documents/js/Ateambot/node_modules/direct-js/lib/direct-node.min.js:9:6278
+  at processTicksAndRejections (internal/process/task_queues.js:97:5)
+
+[2020-02-04 15:51:40]  WebSocket opened.    
+[Tue Feb 04 2020 15:51:41 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[2020-02-04 15:52:38]  WebSocket opened.    
+[Tue Feb 04 2020 15:52:39 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[2020-02-04 15:52:59]  WebSocket opened.    
+[Tue Feb 04 2020 15:52:59 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[2020-02-04 15:53:24]  WebSocket opened.    
+[Tue Feb 04 2020 15:53:24 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[2020-02-04 15:53:36]  WebSocket opened.    
+[Tue Feb 04 2020 15:53:36 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[2020-02-04 15:55:04]  WebSocket opened.    
+[Tue Feb 04 2020 15:55:04 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[2020-02-04 15:55:13]  WebSocket opened.    
+[Tue Feb 04 2020 15:55:13 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[2020-02-04 15:56:04]  WebSocket opened.    
+[2020-02-04 15:56:09]  WebSocket opened.    
+[Tue Feb 04 2020 15:56:09 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[2020-02-04 15:57:05]  WebSocket opened.    
+[Tue Feb 04 2020 15:57:05 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[2020-02-04 15:58:23]  WebSocket opened.    
+[Tue Feb 04 2020 15:58:23 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[2020-02-04 15:58:28]  WebSocket opened.    
+[Tue Feb 04 2020 15:58:28 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[2020-02-04 15:59:21]  WebSocket opened.    
+[Tue Feb 04 2020 15:59:22 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[2020-02-04 15:59:30]  WebSocket opened.    
+[Tue Feb 04 2020 15:59:31 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[2020-02-04 15:59:54]  WebSocket opened.    
+[Tue Feb 04 2020 15:59:54 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[2020-02-04 16:00:18]  WebSocket opened.    
+[2020-02-04 16:00:24]  WebSocket opened.    
+[Tue Feb 04 2020 16:00:24 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[2020-02-04 16:02:05]  WebSocket opened.    
+[Tue Feb 04 2020 16:02:06 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[2020-02-04 16:02:35]  WebSocket opened.    
+[Tue Feb 04 2020 16:02:35 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[2020-02-04 16:03:40]  WebSocket opened.    
+[Tue Feb 04 2020 16:03:40 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[2020-02-04 16:03:58]  WebSocket opened.    
+[Tue Feb 04 2020 16:03:59 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[2020-02-04 16:04:38]  WebSocket opened.    
+[Tue Feb 04 2020 16:04:38 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[2020-02-04 16:21:35]  WebSocket opened.    
+[Tue Feb 04 2020 16:21:35 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
+[2020-02-04 16:25:23]  WebSocket opened.    
+[Tue Feb 04 2020 16:25:23 GMT+0900 (日本標準時)] INFO hubot-redis-brain: Discovered redis from REDIS_URL environment variable
