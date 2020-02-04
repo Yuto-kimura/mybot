@@ -10,6 +10,7 @@
 var tasklist = {};
 
 module.exports = (robot) => {
+
   robot.respond(/TEST$/i, (res) => {
     sendslist(['_231478410_897581056','_231493067_1694498816','_231489514_-1723858944'] ,'sendslist test');
   });
@@ -19,47 +20,50 @@ module.exports = (robot) => {
 
   });
 
-  robot.respond(/ユーザー登録$/i, (res) => {
-    var ID;
-    var Name;
-    var request = new XMLHttpRequest();
+  // robot.respond(/ユーザー登録,(.*)/, (res) => {
+  //   var ID;
+  //   var Name;
+  //   var request = new XMLHttpRequest();
 
-    request.open('GET','https://127.0.0.1:5000/yurubot/api/get/javascript',true);
-    request.responseType = 'json';
+  //   request.open('GET','https://127.0.0.1:5000/yurubot/api/get/javascript',true);
+  //   request.responseType = 'json';
 
-    request.onload = function(){
-        var data = this.response;
-        console.log(data);
-    };
+  //   request.onload = function(){
+  //       var data = this.response;
+  //       console.log(data);
+  //   };
 
-  });
+  // });
 
-  robot.respond(/キーワード送信$/i, (res) => { //送りっぱなしのもの
+  robot.respond(/キーワード送信,(.*)/, (res) => { //送りっぱなしのもの
+    var input = res.match[1].split(",");
     var SendList = [];
-    var Message = '';
-    var Keyword;
+    var Message = input[1];
+    var Keyword = input[0];
 
     // getAPI
     SendList = ['_231478410_897581056'];
-    Message = '送信者:' + res.message.user.name + '\n';
+    Message = '送信者:' + res.message.user.name + '\n' + 'キーワード:' + Keyword + '\n' + Message;
 
     sendslist(SendList,Message);
   });
 
-  robot.respond(/キーワード質問$/i, (res) => { //解答を待つ送信
+  robot.respond(/キーワード質問,(.*)/, (res) => { //解答を待つ送信
+    var input = res.match[1].split(",");
+    var SendList = [];
+    var Message = input[1];
+    var Keyword = input[0];
     var ID = res.message.room;
-    var SendList = [];
-    var Message = '';
-    var Keyword;
 
     // getAPI
     SendList = ['_231478410_897581056'];
-    Message = '送信者:' + res.message.user.name + '\n';
+    Message = '送信者:' + res.message.user.name + '\n' + 'キーワード:' + Keyword + '\n' + Message;
 
     sendslist(SendList,Message);
-
-    var time = '12:34';
-    tasklist[ID] = [Keywords,time]
+  
+    var date = new Date().toLocaleString('ja-JP', {era:'long'});
+    var time =  date.toString();
+    tasklist[ID] = [Keyword,time];
   });
 
   robot.respond(/キーワード確認$/i, (res) => {
@@ -107,10 +111,16 @@ module.exports = (robot) => {
 
   robot.respond(/しめきり$/i, (res) => {
     var ID = res.message.room;
-    var Keyword = tasklist[ID][0];
-    var time = tasklist[ID][1];
-    res.send(time + 'の質問を締め切りました．');
-    delete tasklist[ID];
+    //res.send(ID);
+    if (tasklist[ID]){
+      var Keyword = tasklist[ID][0];
+      var time = tasklist[ID][1];
+      res.send(time + 'の質問を締め切りました．');
+      delete tasklist[ID];
+    }else{
+      res.send('現在質問をしていません．')
+    }
+
   });
 
   
