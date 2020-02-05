@@ -41,8 +41,10 @@ module.exports = (robot) => {
     var Message = input[1];
     var Keyword = input[0];
 
-    // getAPI
+    // sendlist getAPI
     SendList = ['_231478410_897581056'];
+    //
+    
     Message = '送信者:' + res.message.user.name + '\n' + 'キーワード:' + Keyword + '\n' + Message;
 
     sendslist(SendList,Message);
@@ -80,11 +82,10 @@ module.exports = (robot) => {
     res.send(ret);
   });
 
-  robot.respond(/キーワード追加$/i, (res) => {
+  robot.respond(/キーワード追加,(.*)/, (res) => {
     var ID = res.message.room;
-    var addkeywords;
+    var keywords = res.match[1].split(",");
     //keyword add API
-    addkeywords = ['abc','cde','efg']; //for test
     var keywords_len = keywords.length;
 
     var ret = ''; // keyword check
@@ -95,11 +96,10 @@ module.exports = (robot) => {
     res.send(ret + 'を追加しました');
   });
 
-  robot.respond(/キーワード消去$/i, (res) => {
+  robot.respond(/キーワード追加,(.*)/, (res) => {
     var ID = res.message.room;
-    var keywords;
+    var keywords = res.match[1].split(",");
     //keyword delete API
-    keywords = ['abc','cde','efg']; //for test
     var keywords_len = keywords.length;
     var ret = '';
     for(var I = 0; I < keywords_len; I++){
