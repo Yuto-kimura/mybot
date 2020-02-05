@@ -24,9 +24,24 @@ module.exports = (robot) => {
   robot.respond(/ユーザー登録,(.*)/, (res) => {
     var ID = res.message.room;
     var Name = 'abcde'; // ダミー
-    
     // NEWUSER
-
+    var request = require('/Users/matsumotohiroki/.nodebrew/node/v8.16.1/lib/node_modules/request');
+    var options = {
+      url: 'http://127.0.0.1:5000/yurubot/api/post',
+      method: 'POST',
+      headers: {
+        "Content-type": "application/json",
+      },
+      json: {
+        'ID':ID,
+        'USER_NAME':res.message.user.name,
+        'REQUEST':"NEWUSER",
+        'KEYWORD':['daab']
+      }
+    }
+    request(options, function (error, response, body) {
+      var result = body.data;
+    })
  });
 
   robot.respond(/キーワード送信,(.*)/, (res) => { //送りっぱなしのもの
@@ -34,11 +49,26 @@ module.exports = (robot) => {
     var Message = input[1];
     var Keyword = input[0];
 
-    var Sendlist; // GET
+    var request = require('/Users/matsumotohiroki/.nodebrew/node/v8.16.1/lib/node_modules/request');
+    var options = {
+      url: 'http://127.0.0.1:5000/yurubot/api/post',
+      method: 'POST',
+      headers: {
+        "Content-type": "application/json",
+      },
+      json: {
+        'ID':ID,
+        'USER_NAME':res.message.user.name,
+        'REQUEST':"GET",
+        'KEYWORD':keywords
+      }
+    }
+    request(options, function (error, response, body) {
+      var Sendlist = body.data; // GET
+      Message = '送信者:' + res.message.user.name + '\n' + 'キーワード:' + Keyword + '\n' + Message;
 
-    Message = '送信者:' + res.message.user.name + '\n' + 'キーワード:' + Keyword + '\n' + Message;
-
-    sendslist(SendList,Message);
+      sendslist(SendList,Message);
+    })
   });
 
   robot.respond(/キーワード質問,(.*)/, (res) => { //解答を待つ送信
@@ -46,53 +76,111 @@ module.exports = (robot) => {
     var Message = input[1];
     var Keyword = input[0];
     var ID = res.message.room;
-    var Sendlist; // GET
+    var request = require('/Users/matsumotohiroki/.nodebrew/node/v8.16.1/lib/node_modules/request');
+    var options = {
+      url: 'http://127.0.0.1:5000/yurubot/api/post',
+      method: 'POST',
+      headers: {
+        "Content-type": "application/json",
+      },
+      json: {
+        'ID':ID,
+        'USER_NAME':res.message.user.name,
+        'REQUEST':"GET",
+        'KEYWORD':keywords
+      }
+    }
+    request(options, function (error, response, body) {
+      var Sendlist = body.data; // GET
+      Message = '送信者:' + res.message.user.name + '\n' + 'キーワード:' + Keyword + '\n' + Message;
 
-    Message = '送信者:' + res.message.user.name + '\n' + 'キーワード:' + Keyword + '\n' + Message;
+      sendslist(SendList,Message);
 
-    sendslist(SendList,Message);
-  
-    var date = new Date().toLocaleString('ja-JP', {era:'long'});
-    var time =  date.toString();
-    tasklist[ID] = [Keyword,time];
+      var date = new Date().toLocaleString('ja-JP', {era:'long'});
+      var time =  date.toString();
+      tasklist[ID] = [Keyword,time];
+    })
   });
 
   robot.respond(/キーワード確認$/i, (res) => {
     var ID = res.message.room;
-    var keywords; // CHECK
-    var keywords_len = keywords.length;
-    var ret = '';
-    for(var I = 0; I < keywords_len; I++){
-        if (I == 0) ret = keywords[I];
-        else ret = ret + ', ' + keywords[I];
+    var request = require('/Users/matsumotohiroki/.nodebrew/node/v8.16.1/lib/node_modules/request');
+    var options = {
+      url: 'http://127.0.0.1:5000/yurubot/api/post',
+      method: 'POST',
+      headers: {
+        "Content-type": "application/json",
+      },
+      json: {
+        'ID':ID,
+        'USER_NAME':res.message.user.name,
+        'REQUEST':"CHECK",
+        'KEYWORD':keywords
+      }
     }
-    res.send(ret);
+    request(options, function (error, response, body) {
+      var keywords = body.data; // CHECK
+      var keywords_len = keywords.length;
+      var ret = '';
+      for(var I = 0; I < keywords_len; I++){
+          if (I == 0) ret = keywords[I];
+          else ret = ret + ', ' + keywords[I];
+      }
+      res.send(ret);
+    })
   });
 
   robot.respond(/キーワード追加,(.*)/, (res) => {
     var ID = res.message.room;
     var keywords = res.match[1].split(",");
-
-    var nowkeywords; /// CHECK
-    
-    var addkeywords = duplicate_remove_foradd(nowkeywords,addkeywords);
-    var addkeywords_len = addkeywords.length;
-
-    // ADD //
-
-    var ret = '';
-    for(var I = 0; I < addkeywords_len; I++){
-        if (I == 0) ret = addkeywords[I];
-        else ret = ret + ', ' + keywords[I];
+    var request = require('/Users/matsumotohiroki/.nodebrew/node/v8.16.1/lib/node_modules/request');
+    var options = {
+      url: 'http://127.0.0.1:5000/yurubot/api/post',
+      method: 'POST',
+      headers: {
+        "Content-type": "application/json",
+      },
+      json: {
+        'ID':ID,
+        'USER_NAME':res.message.user.name,
+        'REQUEST':"CHECK",
+        'KEYWORD':keywords
+      }
     }
-    res.send(ret + 'を追加しました');
+    request(options, function (error, response, body) {
+      var nowkeywords = body.data;
+      var addkeywords = duplicate_remove_foradd(nowkeywords,keywords);
+      var addkeywords_len = addkeywords.length;
+      var add_request = {
+        'ID':ID,
+        'USER_NAME':res.message.user.name,
+        'REQUEST':"ADD",
+        'KEYWORD':addkeywords
+      }
+      // ADD
+      requestAPI(add_request)
+
+      var ret = '';
+      for(var I = 0; I < addkeywords_len; I++){
+          if (I == 0) ret = addkeywords[I];
+          else ret = ret + ', ' + keywords[I];
+      }
+      res.send(ret + 'を追加しました');
+    })
   });
 
-  robot.respond(/キーワード追加,(.*)/, (res) => {
+  robot.respond(/キーワード消去,(.*)/, (res) => {
+  // robot.respond(/キーワード追加,(.*)/, (res) => {
     var ID = res.message.room;
     var keywords = res.match[1].split(",");
-    
-    //DELETE
+
+    var dell_request = {
+      'ID':ID,
+      'USER_NAME':res.message.user.name,
+      'REQUEST':"DELETE",
+      'KEYWORD':keywords
+    }
+    requestAPI(dell_request)
 
     var keywords_len = keywords.length;
     var ret = '';
@@ -140,7 +228,7 @@ module.exports = (robot) => {
     \n現在登録されている自分のキーワードを表示します．');
   });
 
-  
+
   robot.respond(/help$/, (res) => {
     res.send('・ユーザー登録\
     \n・キーワード送信,[keyword],[メッセージ文]\
@@ -150,7 +238,23 @@ module.exports = (robot) => {
     \n・キーワード消去,[keyword1],[keyword2],...\
     \n・キーワード確認');
   });
-  
+
+
+  function requestAPI(json_data){
+    var request = require('/Users/matsumotohiroki/.nodebrew/node/v8.16.1/lib/node_modules/request');
+    var options = {
+      url: 'http://127.0.0.1:5000/yurubot/api/post',
+      method: 'POST',
+      headers: {
+        "Content-type": "application/json",
+      },
+      json: json_data
+    }
+    request(options, function (error, response, body) {
+      return body.data;
+    })
+  }
+
 
   function sendslist(L,Message){
     var LLength = L.length;
