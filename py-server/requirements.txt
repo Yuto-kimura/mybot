@@ -6,6 +6,7 @@ click-plugins==1.1.1
 colorama==0.4.1
 Flask==1.1.1
 Flask-SQLAlchemy==2.4.0
+Flask-SSLify==0.1.5
 geoip2==2.9.0
 idna==2.8
 itsdangerous==1.1.0
