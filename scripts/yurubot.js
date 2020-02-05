@@ -12,7 +12,8 @@ var tasklist = {};
 module.exports = (robot) => {
 
   robot.respond(/TEST$/i, (res) => {
-    sendslist(['_231478410_897581056','_231493067_1694498816','_231489514_-1723858944'] ,'sendslist test');
+    const text = res.message.roomUsers.map(user => `${user.name} ${user.email} ${user.profile_url}`).join('\n\n');
+    res.send(text);
   });
 
   robot.respond(/ROOMID$/i, (res) => {
@@ -20,31 +21,21 @@ module.exports = (robot) => {
 
   });
 
-  // robot.respond(/ユーザー登録,(.*)/, (res) => {
-  //   var ID;
-  //   var Name;
-  //   var request = new XMLHttpRequest();
+  robot.respond(/ユーザー登録,(.*)/, (res) => {
+    var ID = res.message.room;
+    var Name = 'abcde'; // ダミー
+    
+    // NEWUSER
 
-  //   request.open('GET','https://127.0.0.1:5000/yurubot/api/get/javascript',true);
-  //   request.responseType = 'json';
-
-  //   request.onload = function(){
-  //       var data = this.response;
-  //       console.log(data);
-  //   };
-
-  // });
+ });
 
   robot.respond(/キーワード送信,(.*)/, (res) => { //送りっぱなしのもの
     var input = res.match[1].split(",");
-    var SendList = [];
     var Message = input[1];
     var Keyword = input[0];
 
-    // sendlist getAPI
-    SendList = ['_231478410_897581056'];
-    //
-    
+    var Sendlist; // GET
+
     Message = '送信者:' + res.message.user.name + '\n' + 'キーワード:' + Keyword + '\n' + Message;
 
     sendslist(SendList,Message);
@@ -52,13 +43,11 @@ module.exports = (robot) => {
 
   robot.respond(/キーワード質問,(.*)/, (res) => { //解答を待つ送信
     var input = res.match[1].split(",");
-    var SendList = [];
     var Message = input[1];
     var Keyword = input[0];
     var ID = res.message.room;
+    var Sendlist; // GET
 
-    // getAPI
-    SendList = ['_231478410_897581056'];
     Message = '送信者:' + res.message.user.name + '\n' + 'キーワード:' + Keyword + '\n' + Message;
 
     sendslist(SendList,Message);
@@ -70,9 +59,7 @@ module.exports = (robot) => {
 
   robot.respond(/キーワード確認$/i, (res) => {
     var ID = res.message.room;
-    var keywords;
-    //keyword check
-    keywords = ['abc','cde','efg']; //for test
+    var keywords; // CHECK
     var keywords_len = keywords.length;
     var ret = '';
     for(var I = 0; I < keywords_len; I++){
@@ -85,12 +72,17 @@ module.exports = (robot) => {
   robot.respond(/キーワード追加,(.*)/, (res) => {
     var ID = res.message.room;
     var keywords = res.match[1].split(",");
-    //keyword add API
-    var keywords_len = keywords.length;
 
-    var ret = ''; // keyword check
-    for(var I = 0; I < keywords_len; I++){
-        if (I == 0) ret = keywords[I];
+    var nowkeywords; /// CHECK
+    
+    var addkeywords = duplicate_remove_foradd(nowkeywords,addkeywords);
+    var addkeywords_len = addkeywords.length;
+
+    // ADD //
+
+    var ret = '';
+    for(var I = 0; I < addkeywords_len; I++){
+        if (I == 0) ret = addkeywords[I];
         else ret = ret + ', ' + keywords[I];
     }
     res.send(ret + 'を追加しました');
@@ -99,7 +91,9 @@ module.exports = (robot) => {
   robot.respond(/キーワード追加,(.*)/, (res) => {
     var ID = res.message.room;
     var keywords = res.match[1].split(",");
-    //keyword delete API
+    
+    //DELETE
+
     var keywords_len = keywords.length;
     var ret = '';
     for(var I = 0; I < keywords_len; I++){
@@ -123,6 +117,39 @@ module.exports = (robot) => {
 
   });
 
+  robot.respond(/HELP$/, (res) => {
+    res.send('・ユーザー登録\
+    \nユーザーを新規登録します．');
+
+    res.send('・キーワード送信,[keyword],[メッセージ分]\
+    \n指定したキーワードを持つ人にメッセージを送信します．その際，指定したキーワードが公開されます．');
+
+    res.send('・キーワード質問,[keyword],[メッセージ分]\
+    \n指定したキーワードを持つ人に質問を送信します．「キーワード送信」と異なるところは，「しめきり」で再び同じように質問を締め切ったメッセージが送信できます．');
+
+    res.send('・しめきり\
+    \n「キーワード質問」を締め切ります．対象だった人に「締め切りました」というメッセージが送られます．');
+
+    res.send('キーワード追加,[keyword1],[keyword2],...\
+    \n自身のキーワードを追加します．追加したいキーワードを,区切りで入力することで同時に複数追加できます．');
+
+    res.send('・キーワード消去,[keyword1],[keyword2],...\
+    \n自身のキーワードを消去します．消去したいキーワードを,区切りで入力することで同時に複数消去できます．');
+
+    res.send('キーワード確認\
+    \n現在登録されている自分のキーワードを表示します．');
+  });
+
+  
+  robot.respond(/help$/, (res) => {
+    res.send('・ユーザー登録\
+    \n・キーワード送信,[keyword],[メッセージ文]\
+    \n・キーワード質問,[keyword],[メッセージ文]\
+    \n・しめきり\
+    \n・キーワード追加,[keyword1],[keyword2],...\
+    \n・キーワード消去,[keyword1],[keyword2],...\
+    \n・キーワード確認');
+  });
   
 
   function sendslist(L,Message){
@@ -131,4 +158,21 @@ module.exports = (robot) => {
       robot.send({room : L[I]}, Message);
     }
   }
+
+  function duplicate_remove_foradd(S,A){
+    // S .. now status
+    // A .. add data
+
+    var SSet = new Set(S);
+    var ASet = new Set(A);
+    var Ret = new Array;
+    for (let a of ASet.values()) {
+      if (!SSet.has(a)){
+        Ret.push(a);
+      }
+    }
+
+    return Ret;
+  }
+
 };
