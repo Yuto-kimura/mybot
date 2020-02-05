@@ -21,34 +21,34 @@ module.exports = (robot) => {
 
   });
 
-  robot.respond(/ユーザー登録,(.*)/, (res) => {
-    var ID = res.message.room;
-    var Name = 'abcde'; // ダミー
-    // NEWUSER
-    var request = require('/Users/matsumotohiroki/.nodebrew/node/v8.16.1/lib/node_modules/request');
-    var options = {
-      url: 'http://127.0.0.1:5000/yurubot/api/post',
-      method: 'POST',
-      headers: {
-        "Content-type": "application/json",
-      },
-      json: {
-        'ID':ID,
-        'USER_NAME':res.message.user.name,
-        'REQUEST':"NEWUSER",
-        'KEYWORD':['daab']
-      }
-    }
-    request(options, function (error, response, body) {
-      var result = body.data;
-    })
- });
+ //  robot.respond(/ユーザー登録,(.*)/, (res) => {
+ //    var ID = res.message.room;
+ //    var Name = 'abcde'; // ダミー
+ //    // NEWUSER
+ //    var request = require('/Users/matsumotohiroki/.nodebrew/node/v8.16.1/lib/node_modules/request');
+ //    var options = {
+ //      url: 'http://127.0.0.1:5000/yurubot/api/post',
+ //      method: 'POST',
+ //      headers: {
+ //        "Content-type": "application/json",
+ //      },
+ //      json: {
+ //        'ID':ID,
+ //        'USER_NAME':res.message.user.name,
+ //        'REQUEST':"NEWUSER",
+ //        'KEYWORD':['daab']
+ //      }
+ //    }
+ //    request(options, function (error, response, body) {
+ //      var result = body.data;
+ //    })
+ // });
 
   robot.respond(/キーワード送信,(.*)/, (res) => { //送りっぱなしのもの
     var input = res.match[1].split(",");
     var Message = input[1];
     var Keyword = input[0];
-
+    var ID = res.message.room;
     var request = require('/Users/matsumotohiroki/.nodebrew/node/v8.16.1/lib/node_modules/request');
     var options = {
       url: 'http://127.0.0.1:5000/yurubot/api/post',
@@ -60,14 +60,14 @@ module.exports = (robot) => {
         'ID':ID,
         'USER_NAME':res.message.user.name,
         'REQUEST':"GET",
-        'KEYWORD':keywords
+        'KEYWORD':Keyword
       }
     }
     request(options, function (error, response, body) {
       var Sendlist = body.data; // GET
       Message = '送信者:' + res.message.user.name + '\n' + 'キーワード:' + Keyword + '\n' + Message;
 
-      sendslist(SendList,Message);
+      sendslist(Sendlist,Message,ID);
     })
   });
 
@@ -87,14 +87,14 @@ module.exports = (robot) => {
         'ID':ID,
         'USER_NAME':res.message.user.name,
         'REQUEST':"GET",
-        'KEYWORD':keywords
+        'KEYWORD':Keyword
       }
     }
     request(options, function (error, response, body) {
       var Sendlist = body.data; // GET
       Message = '送信者:' + res.message.user.name + '\n' + 'キーワード:' + Keyword + '\n' + Message;
 
-      sendslist(SendList,Message);
+      sendslist(Sendlist,Message,ID);
 
       var date = new Date().toLocaleString('ja-JP', {era:'long'});
       var time =  date.toString();
@@ -114,17 +114,20 @@ module.exports = (robot) => {
       json: {
         'ID':ID,
         'USER_NAME':res.message.user.name,
-        'REQUEST':"CHECK",
-        'KEYWORD':keywords
+        'REQUEST':"CHECK"
       }
     }
     request(options, function (error, response, body) {
       var keywords = body.data; // CHECK
       var keywords_len = keywords.length;
       var ret = '';
-      for(var I = 0; I < keywords_len; I++){
-          if (I == 0) ret = keywords[I];
-          else ret = ret + ', ' + keywords[I];
+      if (keywords_len == 0) {
+        ret = 'キーワードが登録されていません';
+      } else {
+        for(var I = 0; I < keywords_len; I++){
+            if (I == 0) ret = keywords[I];
+            else ret = ret + ', ' + keywords[I];
+        }
       }
       res.send(ret);
     })
@@ -160,12 +163,16 @@ module.exports = (robot) => {
       // ADD
       requestAPI(add_request)
 
-      var ret = '';
-      for(var I = 0; I < addkeywords_len; I++){
-          if (I == 0) ret = addkeywords[I];
-          else ret = ret + ', ' + keywords[I];
+      if (addkeywords == []) {
+        res.send('指定されたキーワードはすでに登録されています');
+      } else {
+        var ret = '';
+        for(var I = 0; I < addkeywords_len; I++){
+            if (I == 0) ret = addkeywords[I];
+            else ret = ret + ', ' + addkeywords[I];
+        }
+        res.send(ret + 'を追加しました');
       }
-      res.send(ret + 'を追加しました');
     })
   });
 
@@ -191,13 +198,57 @@ module.exports = (robot) => {
     res.send(ret + 'を消去しました');
   });
 
+  robot.respond(/初期化$/i, (res) => {
+    var ID = res.message.room;
+    var request = require('/Users/matsumotohiroki/.nodebrew/node/v8.16.1/lib/node_modules/request');
+    var options = {
+      url: 'http://127.0.0.1:5000/yurubot/api/post',
+      method: 'POST',
+      headers: {
+        "Content-type": "application/json",
+      },
+      json: {
+        'ID':ID,
+        'USER_NAME':res.message.user.name,
+        'REQUEST':"CLEAR"
+      }
+    }
+    request(options, function (error, response, body) {
+      var var_dev = body.data;
+    })
+    res.send('システムの初期化を行いました');
+  });
+
+
+
   robot.respond(/しめきり$/i, (res) => {
     var ID = res.message.room;
     //res.send(ID);
     if (tasklist[ID]){
       var Keyword = tasklist[ID][0];
       var time = tasklist[ID][1];
+
+      var request = require('/Users/matsumotohiroki/.nodebrew/node/v8.16.1/lib/node_modules/request');
+      var options = {
+        url: 'http://127.0.0.1:5000/yurubot/api/post',
+        method: 'POST',
+        headers: {
+          "Content-type": "application/json",
+        },
+        json: {
+          'ID':ID,
+          'USER_NAME':res.message.user.name,
+          'REQUEST':"GET",
+          'KEYWORD':Keyword
+        }
+      }
       res.send(time + 'の質問を締め切りました．');
+
+      request(options, function (error, response, body) {
+        var Sendlist = body.data; // GET
+        var Message = time + 'の質問を締め切りました．';
+        sendslist(Sendlist,Message,ID);
+      })
       delete tasklist[ID];
     }else{
       res.send('現在質問をしていません．')
@@ -206,8 +257,8 @@ module.exports = (robot) => {
   });
 
   robot.respond(/HELP$/, (res) => {
-    res.send('・ユーザー登録\
-    \nユーザーを新規登録します．');
+    // res.send('・ユーザー登録\
+    // \nユーザーを新規登録します．');
 
     res.send('・キーワード送信,[keyword],[メッセージ分]\
     \n指定したキーワードを持つ人にメッセージを送信します．その際，指定したキーワードが公開されます．');
@@ -230,8 +281,7 @@ module.exports = (robot) => {
 
 
   robot.respond(/help$/, (res) => {
-    res.send('・ユーザー登録\
-    \n・キーワード送信,[keyword],[メッセージ文]\
+    res.send('・キーワード送信,[keyword],[メッセージ文]\
     \n・キーワード質問,[keyword],[メッセージ文]\
     \n・しめきり\
     \n・キーワード追加,[keyword1],[keyword2],...\
@@ -256,9 +306,10 @@ module.exports = (robot) => {
   }
 
 
-  function sendslist(L,Message){
+  function sendslist(L,Message,myID){
     var LLength = L.length;
     for(var I = 0;I < LLength; I++){
+      if (myID == L[I]) continue;
       robot.send({room : L[I]}, Message);
     }
   }
